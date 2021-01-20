@@ -16,6 +16,9 @@ Solve puzzles using common mechanics of platforming
 - pressing buttons
 - dodging enemies
 
+Player controls:
+- Left/right walking and jumping
+
 ### Player Life History
 
 A players characters life is recorded from start to end. When they die and then restart the level, their previous life is replayed as a ghost. However this ghost can still interact with the game world(i.e pressing buttons, pushing objects, etc) Player use this to solve puzzles
