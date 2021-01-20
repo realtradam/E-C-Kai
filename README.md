@@ -18,6 +18,7 @@ Solve puzzles using common mechanics of platforming
 
 Player controls:
 - Left/right walking and jumping
+- pick up and use
 
 ### Player Life History
 
