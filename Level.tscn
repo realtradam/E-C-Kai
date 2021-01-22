@@ -29,5 +29,23 @@ position = Vector2( 0, 472 )
 script = ExtResource( 4 )
 
 [node name="DeadBody" parent="." instance=ExtResource( 5 )]
-position = Vector2( 237.602, 353.733 )
+position = Vector2( 235.224, 350.165 )
+
+[node name="DeadBody2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 191.223, 268.11 )
+
+[node name="DeadBody3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 157.925, 352.544 )
+
+[node name="DeadBody4" parent="." instance=ExtResource( 5 )]
+position = Vector2( 318.468, 356.111 )
+
+[node name="DeadBody5" parent="." instance=ExtResource( 5 )]
+position = Vector2( 274.467, 272.867 )
+
+[node name="DeadBody6" parent="." instance=ExtResource( 5 )]
+position = Vector2( 643.122, 426.275 )
+
+[node name="DeadBody7" parent="." instance=ExtResource( 5 )]
+position = Vector2( 545.607, 244.326 )
 [connection signal="died" from="Player" to="GhostSpawner" method="_on_Player_died"]

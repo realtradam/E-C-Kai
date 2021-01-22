@@ -47,12 +47,17 @@ func _physics_process(delta):
 	
 	if self.is_on_ceiling():
 		velocity.y = 1
-	
+
 	# We don't need to multiply velocity by delta because "move_and_slide" already takes delta time into account.
 
 	# The second parameter of "move_and_slide" is the normal pointing up.
 	# In the case of a 2D platformer, in Godot, upward is negative y, which translates to -1 as a normal.
-	move_and_slide(velocity, Vector2(0, -1))
+	move_and_slide(velocity, Vector2.UP, false, 4, PI/4, false)
+	for index in get_slide_count():
+		var collision = get_slide_collision(index)
+		if collision.collider.is_in_group("bodies"):
+			print(collision.normal)
+			collision.collider.apply_central_impulse(-collision.normal * velocity.length() * 0.3)
 
 func respawn():
 	position = respawn_position
